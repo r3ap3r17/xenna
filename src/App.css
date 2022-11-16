@@ -1,38 +1,86 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+:root {
+  --primary: #79B8F4;
+  --secondary: #252B46;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #F4F4ED;
+  color: var(--secondary);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.text {
+  font-weight: 300;
+  font-size: 1rem;
+}
+
+/* NAVBAR MENU */
+.nav-group {
+  font-size: inherit;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-group .nav-title {
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.nav-group .nav-title i {
+  color: var(--primary);
+}
+
+.nav-group ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-group ul .nav-item a {
+  color: inherit;
+  text-decoration: none;
+  display: block;
+  border-bottom: 3px solid var(--primary);
+}
+
+/* RESPONSIVE NAVBAR DROPDOWN MENU */
+.nav-responsive {
+  position: fixed;
+  top: 72px;
+  right: 0;
+}
+
+.nav-responsive ul {
+  background-color: #E4F2EF;
+  overflow-y: hidden;
+  width: 10rem;
+  height: 0;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 0;
+  text-align: center;
+  border-radius: 5px 0 0 5px;
+  transition: all .35s ease;
 }
 
-.App-link {
-  color: #61dafb;
+.nav-responsive ul a {
+  display: inline;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.nav-responsive ul li {
+  padding: 1rem 0;
+}
+
+.nav-responsive.active ul {
+  height: 15rem;
 }
