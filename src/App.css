@@ -50,7 +50,12 @@ body {
   color: inherit;
   text-decoration: none;
   display: block;
-  border-bottom: 3px solid var(--primary);
+  transition: all .25s ease;
+  border-bottom: 3px solid transparent;
+}
+
+.nav-group .nav-item .active {
+  border-bottom-color: var(--primary);
 }
 
 /* RESPONSIVE NAVBAR DROPDOWN MENU */

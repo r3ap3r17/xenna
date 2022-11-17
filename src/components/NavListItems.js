@@ -1,17 +1,28 @@
+import { useState } from "react";
+
 function NavListItems() {
+    const [activeLink, setActiveLink] = useState('home');
     return (
         <ul>
             <li className="nav-item mx-3">
-                <a href="#home">Home</a>
+                <a onClick={ () => setActiveLink('home') }
+                    className={ activeLink === 'home' ? 'active' : null }
+                    href="#home">Home</a>
             </li>
             <li className="nav-item mx-3">
-                <a href="#about">About</a>
+                <a onClick={ () => setActiveLink('about') }
+                    className={ activeLink === 'about' ? 'active' : null }
+                    href="#about">About</a>
             </li>
             <li className="nav-item mx-3">
-                <a href="#faq">FAQs</a>
+                <a onClick={ () => setActiveLink('faq') }
+                    className={ activeLink === 'faq' ? 'active' : null }
+                    href="#faq">FAQs</a>
             </li>
             <li className="nav-item mx-3">
-                <a href="#contact">Contact us</a>
+                <a onClick={ () => setActiveLink('contact') }
+                    className={ activeLink === 'contact' ? 'active' : null }
+                    href="#contact">Contact us</a>
             </li>
         </ul>
     );
