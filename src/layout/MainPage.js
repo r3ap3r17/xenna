@@ -1,5 +1,5 @@
 import NavBar from "./NavBar";
-import HeaderPage from "./pages/HeaderPage";
+import HeaderPage from "./sections/HeaderPage";
 
 function MainPage() {
     return (
