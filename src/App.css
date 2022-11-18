@@ -17,6 +17,11 @@ body {
   color: var(--secondary);
 }
 
+.section-title {
+  font-size: 2.25rem;
+}
+
+
 .text {
   font-weight: 300;
   font-size: 1rem;
@@ -60,22 +65,24 @@ body {
 
 /* RESPONSIVE NAVBAR DROPDOWN MENU */
 .nav-responsive {
-  position: fixed;
+  position: absolute;
   top: 72px;
   right: 0;
 }
 
 .nav-responsive ul {
-  background-color: #E4F2EF;
-  overflow-y: hidden;
-  width: 10rem;
-  height: 0;
+  background-color: #F4F4ED;
+  overflow-x: hidden;
+  width: 0;
+  height: 15rem;
   display: flex;
   flex-direction: column;
   gap: 0;
   text-align: center;
   border-radius: 5px 0 0 5px;
   transition: all .35s ease;
+  box-shadow: -20px 20px 60px #bebebe,
+    20px -20px 60px #ffffff;
 }
 
 .nav-responsive ul a {
@@ -87,7 +94,7 @@ body {
 }
 
 .nav-responsive.active ul {
-  height: 15rem;
+  width: 10rem;
 }
 
 .btn-start {
@@ -97,6 +104,8 @@ body {
   color: #F4F4ED;
   border-radius: 2rem;
   transition: all .25s ease;
+  box-shadow: -20px 20px 60px #c7c7c7,
+    20px -20px 60px #f9f9f9;
 }
 
 .btn-start:hover {
