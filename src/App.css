@@ -11,12 +11,18 @@
   --secondary: #252B46;
 }
 
+*::selection {
+  background-color: var(--secondary);
+  color: var(--primary);
+}
+
 body {
   font-family: 'Poppins', sans-serif;
   background-color: #F4F4ED;
   color: var(--secondary);
 }
 
+/* TEXT */
 .section-title {
   font-size: 2.25rem;
 }
@@ -97,6 +103,7 @@ body {
   width: 10rem;
 }
 
+/* MAIN BUTTON */
 .btn-start {
   margin: 1rem 0;
   padding: .75rem 5rem;
@@ -104,8 +111,9 @@ body {
   color: #F4F4ED;
   border-radius: 2rem;
   transition: all .25s ease;
-  box-shadow: -20px 20px 60px #c7c7c7,
-    20px -20px 60px #f9f9f9;
+  background: linear-gradient(225deg, var(--primary), var(--primary));
+  box-shadow: -5px 5px 10px #c1c1c1,
+    5px -5px 10px #ffffff;
 }
 
 .btn-start:hover {
@@ -120,8 +128,50 @@ body {
   background-color: var(--secondary);
 }
 
+/* TITLE CONTAINER FOR SECTIONS */
+.title-container {
+  width: 75% !important;
+  margin-inline: auto !important;
+}
+
+/* ABOUT CARD */
+.about-card {
+  text-align: center;
+  max-width: 400px;
+  padding: 2rem;
+  margin-inline: auto;
+}
+
+.about-card i {
+  font-size: 4rem;
+  color: var(--primary);
+}
+
+.about-card .card-title {
+  font-size: 1.75rem;
+  margin-bottom: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+/* SM */
 @media screen and (max-width: 576px) {
   .btn-start {
     padding: .75rem 2rem;
   }
+
+  .title-container {
+    width: 100% !important;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+
+
+  .text {
+    font-weight: 300;
+    font-size: 1rem;
+  }
+
+
 }

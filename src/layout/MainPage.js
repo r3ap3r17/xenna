@@ -1,4 +1,5 @@
 import NavBar from "./NavBar";
+import AboutSection from "./sections/AboutSection";
 import HeaderPage from "./sections/HeaderPage";
 
 function MainPage() {
@@ -6,6 +7,7 @@ function MainPage() {
         <main>
             <NavBar />
             <HeaderPage />
+            <AboutSection />
         </main>
     );
 }
