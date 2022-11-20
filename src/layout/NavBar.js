@@ -34,7 +34,7 @@ function NavBar() {
                 ? <NavButton active={ active } activeHandler={ activeHandler } />
                 : <NavListItems /> }
             <div className={ (active & button) ? "nav-responsive active" : "nav-responsive" }>
-                <NavListItems />
+                <NavListItems activeHandler={ activeHandler } />
             </div>
         </Container>
     );

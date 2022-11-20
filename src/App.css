@@ -22,11 +22,19 @@ body {
   color: var(--secondary);
 }
 
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
 /* TEXT */
 .section-title {
   font-size: 2.25rem;
 }
 
+.title {
+  font-size: 2rem;
+}
 
 .text {
   font-weight: 300;
@@ -58,8 +66,6 @@ body {
 }
 
 .nav-group ul .nav-item a {
-  color: inherit;
-  text-decoration: none;
   display: block;
   transition: all .25s ease;
   border-bottom: 3px solid transparent;
@@ -117,7 +123,7 @@ body {
 }
 
 .btn-start:hover {
-  opacity: .9;
+  opacity: .8;
 }
 
 .btn-start.primary {
@@ -132,6 +138,7 @@ body {
 .title-container {
   width: 75% !important;
   margin-inline: auto !important;
+  margin-bottom: 3rem;
 }
 
 /* ABOUT CARD */
@@ -153,6 +160,10 @@ body {
   margin-top: 1.5rem;
 }
 
+.faq-container {
+  width: 85%;
+}
+
 /* SM */
 @media screen and (max-width: 576px) {
   .btn-start {
@@ -167,10 +178,13 @@ body {
     font-size: 2rem;
   }
 
-
   .text {
     font-weight: 300;
     font-size: 1rem;
+  }
+
+  .faq-container {
+    width: 100%;
   }
 
 

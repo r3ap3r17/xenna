@@ -1,5 +1,6 @@
 import NavBar from "./NavBar";
 import AboutSection from "./sections/AboutSection";
+import FaqSection from "./sections/FaqSection";
 import HeaderPage from "./sections/HeaderPage";
 
 function MainPage() {
@@ -8,6 +9,7 @@ function MainPage() {
             <NavBar />
             <HeaderPage />
             <AboutSection />
+            <FaqSection />
         </main>
     );
 }
