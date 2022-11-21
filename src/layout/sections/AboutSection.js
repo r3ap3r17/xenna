@@ -1,5 +1,6 @@
 import { Container, Col, Row } from "react-bootstrap";
 import AboutCard from "../../components/AboutCard";
+import SectionTitle from "../../components/SectionTitle";
 
 function AboutSection() {
     const ABOUT_CARD_DATA = [
@@ -22,14 +23,11 @@ function AboutSection() {
     return (
         <section id="about" className="mt-5">
             <Container className="pt-5">
-                <Container className="title-container">
-                    <h1 className="section-title text-center">
-                        Xenna helps you enjoy the furniture and electronics you want
-                    </h1>
+                <SectionTitle title="Xenna helps you enjoy the furniture and electronics you want">
                     <p className="text text-center mt-4">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec interdum
                     </p>
-                </Container>
+                </SectionTitle>
                 <Row>
                     { ABOUT_CARD_DATA.map((card) => {
                         return <Col lg={ 4 }>
