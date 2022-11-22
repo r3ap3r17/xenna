@@ -27,6 +27,10 @@ a {
   text-decoration: none;
 }
 
+a:hover {
+  color: var(--primary) !important;
+}
+
 /* TEXT */
 .section-title {
   font-size: 2.25rem;
@@ -117,9 +121,6 @@ a {
   color: #F4F4ED;
   border-radius: 2rem;
   transition: all .25s ease;
-  background: linear-gradient(225deg, var(--primary), var(--primary));
-  box-shadow: -5px 5px 10px #c1c1c1,
-    5px -5px 10px #ffffff;
 }
 
 .btn-start:hover {
@@ -127,11 +128,15 @@ a {
 }
 
 .btn-start.primary {
-  background-color: var(--primary);
+  background: linear-gradient(225deg, var(--primary), var(--primary));
+  box-shadow: -5px 5px 10px #c1c1c1,
+    5px -5px 10px #ffffff;
 }
 
 .btn-start.secondary {
-  background-color: var(--secondary);
+  background: linear-gradient(225deg, var(--secondary), var(--secondary));
+  box-shadow: -5px 5px 18px #6091c1,
+    5px -5px 18px #92dfff;
 }
 
 /* TITLE CONTAINER FOR SECTIONS */
@@ -181,6 +186,18 @@ a {
   left: -5px;
   font-size: 3rem;
   color: var(--primary);
+}
+
+/* CONTACT */
+#contact {
+  background-color: var(--primary);
+}
+
+/* FOOTER  */
+.footer-text {
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
 
 /* SM */

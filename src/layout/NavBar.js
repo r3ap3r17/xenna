@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { Container } from "react-bootstrap";
 import NavButton from "../components/NavButton";
 import NavListItems from "../components/NavListItems";
+import MainLogo from "../components/MainLogo";
 
 
 function NavBar() {
@@ -25,11 +26,7 @@ function NavBar() {
 
     return (
         <Container fluid="md" className="nav-group pt-4 px-4 px-md-0">
-            <span className="nav-title">
-                {/* <i class="fa-solid fa-atom me-2"></i> */ }
-                <i class="fa-brands fa-artstation me-2"></i>
-                Xenna
-            </span>
+            <MainLogo />
             { button
                 ? <NavButton active={ active } activeHandler={ activeHandler } />
                 : <NavListItems /> }
