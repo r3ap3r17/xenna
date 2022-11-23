@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import { Container } from "react-bootstrap";
 import MainLogo from "../components/MainLogo";
 import NavListItems from "../components/NavListItems";
-import FooterText from "../components/FooterText";
 
 function Footer() {
     const [logo, setLogo] = useState(false);
