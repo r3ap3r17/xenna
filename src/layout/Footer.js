@@ -24,7 +24,6 @@ function Footer() {
         <Container fluid="md" className="nav-group py-5 position-relative">
             { logo ? <MainLogo /> : null }
             <NavListItems />
-            <FooterText />
         </Container>
     );
 }
