@@ -1,5 +1,7 @@
 function FooterText() {
-    return (<span className='footer-text'>Xenna &copy; Rights Reserved</span>);
+    return (
+        <span className='footer-text mx-auto'>Xenna &copy; Rights Reserved</span>
+    );
 }
 
 export default FooterText;

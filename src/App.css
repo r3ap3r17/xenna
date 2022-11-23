@@ -196,8 +196,11 @@ a:hover {
 /* FOOTER  */
 .footer-text {
   position: absolute;
+  position: absolute;
   bottom: 0;
-  right: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: .7;
 }
 
 /* SM */
